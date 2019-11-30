@@ -1,0 +1,9 @@
+import os
+
+class Config:
+    SECRET_KEY = os.getenv("SECRET_KEY")
+    SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI")
+    SQLALCHEMY_ECHO = True
+
+
+# #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
