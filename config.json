@@ -1,0 +1,8 @@
+{
+        "SECRET_KEY":"4050bb6b29daf80386437237c2a7e364",
+        "FLASK_APP":"run.py",
+        "FLASK_ENV":"development",
+        "USER_EMAIL":"lastgulch@gmail.com",
+        "EMAIL_PASS":"password"
+}
+
