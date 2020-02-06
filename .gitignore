@@ -3,3 +3,4 @@ keys.txt
 __pycache__
 .idea
 .ipynb_checkpoints/
+transfer/
