@@ -1,6 +1,0 @@
-config for server
-
-config nginx
-sudo rm /etc/nginx/sites_enabled/default
-
-config gunicorn

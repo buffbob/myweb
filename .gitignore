@@ -1,6 +1,10 @@
 venv/
+venv/*
 keys.txt
 __pycache__
 .idea
 .ipynb_checkpoints/
 transfer/
+transfer/*
+transfer/MyWebsite
+transfer/MyWebsite/*
