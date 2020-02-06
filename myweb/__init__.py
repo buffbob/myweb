@@ -23,7 +23,9 @@ def create_app(test_config=None):
     # login_manager.init_app(app)
 
     from myweb.users.routes import users
+    from myweb.errors.handlers import errors
 
     app.register_blueprint(users)
+    app.register_blueprint(errors)
 
     return app
