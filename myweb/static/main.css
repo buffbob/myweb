@@ -1,5 +1,6 @@
 body {
-  background: #fafafa;
+  background-color:'red';
+  /*url(  background-image: url("/home/thistle/Desktop/FlaskApps/sites_in_production/MyWebsite/myweb/static/images/ship.jpg");*/
   color: #333333;
   margin-top: 5rem;
 }
@@ -96,3 +97,8 @@ h1 {
     color:olivedrab;
 }
 */
+/* play_______________________________________ */
+p {
+  color:"red";
+  background-image: url("/home/thistle/Desktop/FlaskApps/sites_in_production/MyWebsite/myweb/static/images/ship.jpg");
+}

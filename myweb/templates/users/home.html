@@ -17,8 +17,9 @@
     <li>Strong python data anylysis chops</li>
     <li>Machine Learning with tensorflow, keras, scikit and kaggle experience</li>
     <li>Decent web backend skills with python and flask</li>
-    <li>Experienced with the basics- git, Linux command line, various sql, passable server skills</li>
-    <li>Strong java skills, messing around with julia- love it, haven't shirked from needed math</li>
+    <li>Experienced with the basics- git, linux, sql databases, decent server skills</li>
+    <li>Pretty strong core java skills, messing around with julia, and c and microprocessors</li>
+    <li>GIS/mapping/analysis- Qgis, and Grass as well as terminal and python programming for remote sensing and lidar</li>
   </ul>
 </div>
 <hr>
@@ -28,3 +29,45 @@
 </div>
 
 {% endblock content %}
+{% block sidebar %}
+<div class="text-center">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a
+                            href="http://www.Tweestmasters.com">TweestMasters</a></li>
+                    <div class="my_description ">Flask web app that is a cross between twitter and Toast Masters</div>
+                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a href="/">data pipelines
+                        for ML</a></li>
+                    <div class="my_description">Figuring out best ways to move data around with some kaggle examples.
+                    </div>
+
+                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a href="http://birdimageclassifier.us-east-2.elasticbeanstalk.com/">Bird
+                        Classifier</a></li>
+                    <div class="my_description">Web based image manager and user assisted classifier. Written in flask
+                        using google or flicker apis.
+                    </div>
+
+                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a href="#">Lidar
+                        Notebooks</a></li>
+                    <div class="my_description">Exploration of techniques and data pipeline development</div>
+                </ul>
+                <!--
+                  Trying dropdown to some links
+                -->
+                <hr>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type='button' id="dropDownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Some places to visit
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+                        <a class="dropdown-item" href="{{ url_for('users.map') }}">View atop Pikes Peak</a>
+                        <a class="dropdown-item" href="http://catnipapp-env.eba-4ft8z3z9.us-east-2.elasticbeanstalk.com/">Chuckle now</a>
+                        <a class="dropdown-item" href="https://hub.docker.com/u/paddypup">My DockerHub</a>
+                        <a class="dropdown-item" href="https://github.com/buffbob">My Github</a>
+                        <a class="dropdown-item" href="{{ url_for('users.fol1')}}">Map 1</a>
+                        <a class="dropdown-item" href="{{ url_for('users.fol2') }}">Map 2</a>
+                    </div>
+                </div>
+
+            </div>
+{% endblock %}

@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='beav1.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 
+
     {% if title %}
     <title>BuffBob - {{ title }}</title>
     {% else %}
@@ -36,7 +37,7 @@
         </div>
     </nav>
 </header>
-<main role="main" class="container">
+<main role="main">
     <div class="row">
         <div class="col-md-8">
             {% with messages = get_flashed_messages(with_categories=true) %}
@@ -55,43 +56,7 @@
                 <h3 class="list-group-item list-group-item-light">Some Projects</h3>
             </div>
 
-            <div class="text-center">
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a
-                            href="/">TweestMasters</a></li>
-                    <div class="my_description ">Flask web app that is a cross between twitter and Toast Masters</div>
-                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a href="/">data pipelines
-                        for ML</a></li>
-                    <div class="my_description">Figuring out best ways to move data around with some kaggle examples.
-                    </div>
-
-                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a href="/">Bird
-                        Classifier</a></li>
-                    <div class="my_description">Web based image manager and user assisted classifier. Written in flask
-                        using google or flicker apis.
-                    </div>
-
-                    <li class="list-group-item list-group-item-light" style="font-size:22px;"><a href="/">Lidar
-                        Notebooks</a></li>
-                    <div class="my_description">Exploration of techniques and data pipeline development</div>
-                </ul>
-                <!--
-                  Trying dropdown to some links
-                -->
-                <hr>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type='button' id="dropDownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Some places to visit
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
-                        <a class="dropdown-item" href="{{ url_for('users.map') }}">View atop Pikes Peak</a>
-                        <a class="dropdown-item" href="#">More Crap</a>
-                        <a class="dropdown-item" href="#">Even More</a>
-                    </div>
-                </div>
-
-            </div>
+            {% block sidebar %}{%  endblock %}
         </div>
     </div>
 </main>

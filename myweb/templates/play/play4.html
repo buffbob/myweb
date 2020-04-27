@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Boogers</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q93Nf9plIT4?start=503" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24436.975632894555!2d-105.0279936!3d40.0392192!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587353819083!5m2!1sen!2sus"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+        aria-hidden="false" tabindex="0"></iframe>
+
+<hr>
+
+<img src="{{ url_for('static', filename='beav1.ico') }}" alt="" width="10" height="20">
+<figure>
+  <img src="https://newimages.yachtworld.com/resize/1/96/87/6989687_20190215130905723_1_XLARGE.jpg?f=/1/96/87/6989687_20190215130905723_1_XLARGE.jpg&w=924&h=693&t=1578424816000" title="A ship" alt="The head and torso of a dinosaur skeleton. It has a large head with long sharp teeth" width="290" height="200">
+  <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+</figure>
+<a href="https://www.yachtworld.com/boats/1981/hans-christian-39-pilothouse-3640030/">Boat</a>
+<script>
+    const link = document.querySelector("a");
+    link.textContent = "Pirates from Hell";
+    link.href="https://developer.mozilla.org";
+</script>
+<p style="background-image: url('static/images/ship.jpg')" title='fred the boat' >resulting embedded image, is arguably easier to position and control than HTML images. So why bother with HTML images? As hinted to above, CSS background images are for decoration only. If you just want to add something pretty to your page to enhance the visuals, this is fine. Though, such images have no semantic meaning at all. They can't have any text equivalents, are invisible to screen readers, and so on. This is where HTML images shine!
+
+</p>
+
+{% endblock %}
