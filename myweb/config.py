@@ -14,8 +14,8 @@ else:
     temp1 = "4050bb6b29daf80386437237c2a7e364"
     temp2 = "run.py"
     temp3 = "development"
-    temp4 = "lastgulch@gmail.com"
-    temp5 = "1SweetPastor"
+    temp4 = "email@gmail.com"
+    temp5 = "CastorPastor"
 
 
 
