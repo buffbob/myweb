@@ -1,11 +1,29 @@
 import os
+import json
+
+filepath = "/etc/web_app_configs/config.myweb.json)"
+if os.path.isfile(filepath):
+    with open(filepath) as f:
+        config_dic = json.load(f)
+    temp1 = config_dic["SECRET_KEY"]
+    temp2 = config_dic["FLASK_APP"]
+    temp3 = config_dic["FLASK_ENV"]
+    temp4 = config_dic["USER_EMAIL"]
+    temp5 = config_dic["EMAIL_PASS"]
+else:
+    temp1 = "4050bb6b29daf80386437237c2a7e364"
+    temp2 = "run.py"
+    temp3 = "development"
+    temp4 = "lastgulch@gmail.com"
+    temp5 = "1SweetPastor"
+
+
 
 class Config:
-    SECRET_KEY=os.environ.get("SECRET_KEY")
-    # SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI")
-    # SQLALCHEMY_ECHO = True
-    FLASK_APP=os.environ.get("FLASK_APP")
-    FLASK_ENV=os.environ.get("FLASK_ENV")
-    #Later when moveing to production will use the included json file for variables such as these
+    SECRET_KEY = temp1
+    FLASK_APP = temp2
+    FLASK_ENV = temp3
+    USER_EMAIL = temp4
+    EMAIL_PASS = temp5
 
 
