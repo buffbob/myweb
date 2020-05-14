@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h3>I am finally learning JavaScript - Some places to visit</h3>
+
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type='button' id="dropDownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Some JS Playtime
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+        <a class="dropdown-item" href="{{ url_for('users.bubbles') }}">Interactive bubbles</a>
+        <a class="dropdown-item" href="http://catnipapp-env.eba-4ft8z3z9.us-east-2.elasticbeanstalk.com/">Chuckle
+            now</a>
+        <a class="dropdown-item" href="{{ url_for('users.calc') }}">Simple Calc</a>
+
+        <a class="dropdown-item" href="{{ url_for('users.ranch_web_gallery') }}">The Ranch</a>
+        <a class="dropdown-item" href="https://hub.docker.com/u/paddypup">My DockerHub</a>
+        <a class="dropdown-item" href="https://github.com/buffbob">My Github</a>
+    </div>
+</div>
+{% endblock %}

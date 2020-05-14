@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ranch_web_style.css') }}">
+{% endblock %}
+{% block  content %}
+    <h1>The Ranch</h1>
+
+    <div class="full-img">
+      <img id="main_img" class="displayed-img" src="static/images/ranch_web/ranch10.JPG">
+      <div class="overlay"></div>
+    </div>
+
+<div>A ranch gallery</div>
+    <div class="thumb-bar">
+
+    </div>
+    <script src="{{ url_for('static', filename='ranch_web_gallery.js') }}"></script>
+
+{% endblock %}
+{% block sidebar %}
+{% endblock %}

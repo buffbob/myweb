@@ -42,4 +42,23 @@ def home2():
 def boogers():
     return render_template('booger.html')
 
+@users.route("/bubbles")
+def bubbles():
+    return render_template('jspages/canvas2.html')
 
+@users.route("/simple_calc")
+def calc():
+    return render_template('jspages/simple_calc.html')
+
+@users.route("/jsapps")
+def jsapps():
+    return render_template('jspages/jsapps.html')
+
+
+@users.route('/ranch_web')
+def ranch_web_gallery():
+    return render_template("users/ranch_web.html")
+
+@users.route("/maps")
+def maps():
+    return render_template("users/maps.html")

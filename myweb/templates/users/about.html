@@ -3,32 +3,46 @@
     <h1>About Page</h1>
 <div>
     <p> Young kid from the south loved Colorado while visiting on vacation and decides this is
-        place for him. Can't beat the climate, lack of bugs, and oh, those mountains. Eventually
+        place for him. Can't beat the climate, lack of bugs and these mountains. Eventually, I
         got a college degree in Chemistry from CU in <span style="font-size:8px;">1993</span>.
-        This led obviously to...  starting a pizza shop in Nederland
-        and a decade of experience in carpentry.</p>
-    <p> A need for less human contact led to a the
-        purchase of small ranch in SE Colorado. After raising bison for a dozen years, an old
-        back injury convinced me to try something new. Oh, and there was this girl too. So back
-        to the Front Range but now with a family. I tried Real Estate but not really my cup of tea.
+        This led obviously to...  work as a carpenter and starting a pizza shop in Nederland.</p>
+
+    <p> After many, many pizzas- a need for less human contact led to the
+        purchase of small ranch in SE Colorado. Before an old back injury forced me to reconsider my future, I raised bison
+        for 18 years. During that time I helped a local land
+        conservancy(<a href="http://southernplains.org/">Southern Plains Land Trust</a>) by serving on their
+        board for a decade and hosting many school groups and other events for them. I also donated many dozens of bison to
+        Indian tribes for food and to help start herds on their reservations, and worked with the
+        <a href="https://www.denverindiancenter.org/">Denver Indian Center</a> to host gatherings and hunts. And my ranch served as retirement
+        facility for the Denver Zoo when they needed a home for their aging bison.
     </p>
-    <p> Starting a biz, carpentry, and mostly ranching has honed what I think of as my best
-        asset- problem solving. So I decided to learn 'programming'. I learned it from the internet.
-        It was hard.
+
+    <p>
+        So back to the Front Range but now with a family. I tried real estate but not really my cup of tea. So I decided to learn
+        'programming'. I learned it from the internet. It was hard. I not only learned to program but also learned a bit about computer
+        science and refreshed my math. Starting businesses, carpentry, and mostly ranching has honed
+        what I think of as my best asset- problem solving. I have found that I bring this asset to the world of programming as well.
     </p>
-    <p> So i ain't got no formal education- there you go. But I hope you can see from my projects
-        that I took this endeavor quite seriously. I think my aforementioned education(University of Internet)
-        highlights my abilities as a problem solver. I came across many hurdles with little guidance.
-        Yet here I am confident that my hard won abilities will score me a new future.
+
+    <p> So i ain't got no formal education- but from my projects you can see that I took this endeavor quite seriously. I think
+        my aforementioned education(University of Internet) highlights my abilities as a problem solver. I came across many hurdles
+        with little guidance. Yet here I am confident that my hard won abilities will score me a new future.
     </p>
-    <p> Now living in Golden. Playing lots of tennis with my daughter and trying to keep my border
-        collie entertained.
+    <p> Now living in Golden, still doing some carpentry. My interests and hobbies include wilderness camping, inline skating, tennis, gardening,
+        sailing and keeping my border collie and teenage daughter entertained.
     </p>
-    <p> drop me a line at lastgulch@gmail.com
-    </p>
-    <p> or give me a ring or text at 303-519-0549
-    </p>
-    <P> Thanks for your time, BuffBob(aka Robert Alsobrook, aka Thistle)</P>
+    <p> Thanks for your time, BuffBob(aka Robert Alsobrook, aka Thistle)</p>
 </div>
 
 {% endblock content %}
+{% block sidebar %}
+{% include "sidebar.html" %}
+<div class="text-center">
+    <div id="contact">
+        <h5>Contact Info</h5>
+        <div>email: lastgulch@gmail.com</div>
+        <div>cell: 303-519-0549</div>
+        <a href="#">email me</a>
+    </div>
+</div>
+{% endblock %}
