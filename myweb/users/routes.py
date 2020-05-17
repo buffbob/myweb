@@ -1,5 +1,9 @@
 import folium
-from flask import render_template, Blueprint
+from flask import render_template, Blueprint, flash, redirect, url_for, current_app
+from myweb.forms import SendMeAnEmail
+from myweb.email import send_email
+from flask_mail import Mail, Message
+from myweb import mail
 
 users = Blueprint("users", __name__)
 
@@ -62,3 +66,33 @@ def ranch_web_gallery():
 @users.route("/maps")
 def maps():
     return render_template("users/maps.html")
+
+@users.route("/send_an_email", methods=["GET", "POST"])
+def send_me_an_email():
+    form = SendMeAnEmail()
+    if form.validate_on_submit():
+        em = form.email.data # sender
+        msg = form.msg.data
+        title = "EMAIL FROM BUFFBOB.COM"
+
+        print(em)
+        print(msg)
+        newmsg = Message(title, sender="lastgulch@gmail.com", recipients=["nuckerts@gmail.com"])
+        newmsg.body = msg
+        mail.send(newmsg)
+        print('success?')
+        flash("thanks I will be in touch!", "success")
+        return render_template('users/home.html',title="boogs")
+
+        #send_email(title, sender=em, recipients=current_app.config["ADMINS"], text_body=msg)
+        #send_email(title, sender=em, recipients=['nuckerts@gmail.com'], text_body=msg)
+
+                   # text_body=render_template("users/email_sent.txt", msg=msg))
+
+        # html_body=render_template("users/email_sent.html", msg=msg))
+
+
+
+
+
+    return render_template("users/send_an_email.html", form=form)

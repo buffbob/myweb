@@ -104,6 +104,7 @@ h1 {
 #display-area {
   padding-bottom: 4px;
   background-color: #5f788a;
+  color: white;
   text-align: center;
 }
 
@@ -133,5 +134,8 @@ h1 {
   border-width:3px;
   border-radius: 5%;
   border-color:#5f788a;
+}
+
+#messageform {
 
 }

@@ -7,14 +7,18 @@ from myweb.config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
+from flask_mail import Mail
 
 # db = SQLAlchemy()
 # bcrypt = Bcrypt()
 # login_manager = LoginManager()
 #login_manager.login_view = "booger"
+mail = Mail()
 
 def create_app(test_config=None):
+
     app = Flask(__name__, instance_relative_config=True)
+
     if test_config is None:
         app.config.from_object(Config)
     else:
@@ -23,6 +27,7 @@ def create_app(test_config=None):
     # db.init_app(app)
     # bcrypt.init_app(app)
     # login_manager.init_app(app)
+    mail.init_app(app)
 
     if not app.debug:
         # ...
