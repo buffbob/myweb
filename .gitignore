@@ -8,3 +8,6 @@ transfer/
 transfer/*
 transfer/MyWebsite
 transfer/MyWebsite/*
+logs/*
+
+
