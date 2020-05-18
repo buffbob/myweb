@@ -13,7 +13,7 @@ if os.path.isfile(filepath):
     temp5 = config_dic["MAIL_PASS"]
     temp6 = config_dic['MAIL_SERVER']
     temp7 = int(config_dic['MAIL_PORT']) or 25
-    temp8 = config_dic.get('MAIL_USE_TLS') is not None
+    temp8 = config_dic.get('MAIL_USE_TLS') == "True"
     temp9 = config_dic.get('MAIL_USE_SSL') == "True"
     temp10 = ['nuckerts@gmail.com'] # ADMINS
 
