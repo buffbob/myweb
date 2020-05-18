@@ -32,13 +32,13 @@ else:
 
 class Config:
     SECRET_KEY = temp1
-    #FLASK_APP = temp2
-    #FLASK_ENV = temp3
+    FLASK_APP = temp2
+    FLASK_ENV = temp3
     MAIL_USERNAME = temp4
     MAIL_PASSWORD = temp5
     MAIL_SERVER = temp6
     MAIL_PORT = temp7
-    MAIL_USE_TLS = False #temp8
-    MAIL_USE_SSL = True #temp9
+    MAIL_USE_TLS = True #temp8
+    MAIL_USE_SSL = False #temp9
     # ADMINS = temp10
 
