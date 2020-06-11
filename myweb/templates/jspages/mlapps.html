@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+    <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type='button' id="dropDownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    ML playtime
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+        <a class="dropdown-item" href="{{ url_for('tfjs.iris3') }}">Iris flower classifier</a>
+        <a class="dropdown-item" href="http://catnipapp-env.eba-4ft8z3z9.us-east-2.elasticbeanstalk.com/">Chuckle now</a>
+
+    </div>
+    </div>
+
+</div>
+{% endblock %}

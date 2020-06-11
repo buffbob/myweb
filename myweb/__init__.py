@@ -44,9 +44,11 @@ def create_app(test_config=None):
     from myweb.users.routes import users
     from myweb.errors.handlers import errors
     from myweb.play.routes import play
+    from myweb.tfjs.routes import tfjs
 
     app.register_blueprint(users)
     app.register_blueprint(errors)
     app.register_blueprint(play)
+    app.register_blueprint(tfjs)
 
     return app

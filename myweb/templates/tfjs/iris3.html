@@ -1,0 +1,46 @@
+{% extends 'layout3.html' %}
+{% block head %}
+{% endblock %}
+{% block  content %}
+ <div>
+        <h1>Iris Classifier</h1>
+        <h5>some sample data might be:</h5>
+        <ul>
+            <li>flower1(setosa): sepal length = 3.5; sepal width = 5.1; petal length = 0.2; petal width = 1.4</li>
+            <li>flower2(versicolor): sepal length = 3; sepal width = 5.9; petal length = 1.5; petal width = 4.2</li>
+            <li>flower3(virginica): sepal length = 3.3; sepal width = 5.9; petal length = 1.8; petal width = 5.1</li>
+            <li>or input your own data</li>
+        </ul>
+        <hr>
+        <h5>Please enter your flower information below</h5>
+        <hr>
+    </div>
+<p></p>
+    <div class="container">
+        <div class="row">
+
+            <div id="iris2body" class="col-sm-6 text-center">
+                <input id="in1" type="text" placeholder="enter stamen length" size="20"><br>
+                <input id="in2" type="text" placeholder="enter stamen width" size="20"><br>
+                <input id="in3" type="text" placeholder="enter petal length" size="20"><br>
+                <input id="in4" type="text" placeholder="enter petal width" size="20"><br>
+            </div>
+            <div id="output">
+
+            </div>
+
+            <div class="col-sm-6">
+                <!--                <div>
+                                    <img id='iris_picture' src="static/images/iris_one.jpeg" alt='"Iris Picture Unavailable"'>
+                                </div>-->
+            </div>
+
+        <button>Submit</button>
+            <div id="explain"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+{% endblock %}
+{% block sidebar %}
+{% endblock %}

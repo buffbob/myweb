@@ -67,6 +67,14 @@ def ranch_web_gallery():
 def maps():
     return render_template("users/maps.html")
 
+@users.route("/mlapps")
+def mlapps():
+    return render_template("jspages/mlapps.html")
+
+@users.route("/resume")
+def resume():
+    return render_template("users/resume.html")
+
 @users.route("/send_an_email", methods=["GET", "POST"])
 def send_me_an_email():
     form = SendMeAnEmail()

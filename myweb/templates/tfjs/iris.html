@@ -1,0 +1,43 @@
+{% include "layout.html" %}
+{% block content %}
+<script>
+    function run() {
+        alert("iris");
+    }
+</script>
+<div class="container">
+    <h1>Iris Classifier</h1>
+    <h5>some sample data might be:</h5>
+            <ul>
+                <li>flower1(setosa): sepal width = 3.5; sepal height = 5.1; petal width = 0.2; petal height = 1.4</li>
+                <li>flower2(versicolor): sepal width = 3; sepal height = 5.9; petal width = 1.5; petal height = 4.2</li>
+                <li>flower3(virginica): sepal width = 3.3; sepal height = 5.9; petal width = 1.8; petal height = 5.1</li>
+                <li>or input your own data</li>
+            </ul>
+    <hr>
+    <h5>Please enter flower information below</h5>
+    <hr>
+    <form id="irisform" class="p-4" action="#" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <label id="lab1" class="irisformlabels" for="seplen">Sepal width </label>
+                    <input type="text" id="seplen" name="seplen"><br>
+                    <label id="lab2" class="irisformlabels" for="sepwid">Sepal height </label>
+                    <input type="text" id="sepwid" name="sepwid"><br>
+                    <label id="lab3" class="irisformlabels" for="petlen">petal width </label>
+                    <input type="text" id="petlen" name="petlen"><br>
+                    <label id="lab4" class="irisformlabels" for="petwid">petal height</label>
+                    <input  type="text" id="petwid" name="petwid"><br>
+                    <button type="submit" id="irisbtn" class="p-2">Click to Submit</button>
+                </div>
+        </div>
+    </form>
+    <textarea id="ta1" class="" rows="4" cols="50"> prediction will be output here</textarea>
+    {% for each in hm %}
+    <h3>
+        {{ each }}
+    </h3>
+    {% endfor %}
+</div>
+{% endblock %}
+

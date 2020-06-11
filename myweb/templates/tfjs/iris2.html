@@ -1,0 +1,42 @@
+{% extends "layout_tfjs.html"%}
+
+{% block content %}
+
+<div id="">
+    <div>
+        <h1>Iris Classifier</h1>
+        <h5>some sample data might be:</h5>
+        <ul>
+            <li>flower1(setosa): sepal width = 3.5; sepal height = 5.1; petal width = 0.2; petal height = 1.4</li>
+            <li>flower2(versicolor): sepal width = 3; sepal height = 5.9; petal width = 1.5; petal height = 4.2</li>
+            <li>flower3(virginica): sepal width = 3.3; sepal height = 5.9; petal width = 1.8; petal height = 5.1</li>
+            <li>or input your own data</li>
+        </ul>
+        <hr>
+        <h5>Please enter your flower information below</h5>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div id="iris2body" class="col-sm-6 text-center"><input id="in1" type="text"
+                                                                    placeholder="enter stamen length" size="20"><br>
+
+                <input id="in2" type="text" placeholder="enter stamen width" size="20"><br>
+                <input id="in3" type="text" placeholder="enter petal length" size="20"><br>
+                <input id="in4" type="text" placeholder="enter petal width" size="20"><br>
+            </div>
+            <div id="output">
+
+            </div>
+
+            <div class="col-sm-6">
+                <!--                <div>
+                                    <img id='iris_picture' src="static/images/iris_one.jpeg" alt='"Iris Picture Unavailable"'>
+                                </div>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

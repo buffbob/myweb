@@ -9,21 +9,6 @@
             </div>
             <span class="my_description ">twitter meet Toast Masters</span>
         </li>
-
-        <li class="list-group-item list-group-item-light" style="font-size:22px;">
-            <button class="btn btn-secondary dropdown-toggle" type='button' id="pipelinesMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                ML pipelines
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
-                <a class="dropdown-item" href="https://github.com/buffbob/titanic">Titanic</a>
-                <a class="dropdown-item" href="https://github.com/buffbob/air_bus">Air-bus Image Detection</a>
-                <a class="dropdown-item" href="https://github.com/buffbob/ships_from_space">Ships from Satellite Imagery</a>
-            </div>
-            <div class="my_description pt-2">Kaggle examples
-            </div>
-        </li>
-
         <li class="list-group-item list-group-item-light" style="font-size:22px;">
             <a href="http://birdimageclassifier.us-east-2.elasticbeanstalk.com/">Bird Classifier</a>
             <div class="my_description">Image scrapper, manager, and user assisted classifier.
@@ -43,6 +28,20 @@
             <div class="my_description">GIS and lidar projects</div>
         </li>
         <li class="list-group-item list-group-item-light" style="font-size:22px;">
+            <button class="btn btn-secondary dropdown-toggle" type='button' id="pipelinesMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ML pipelines
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+                <a class="dropdown-item" href="https://github.com/buffbob/titanic">Titanic</a>
+                <a class="dropdown-item" href="https://github.com/buffbob/air_bus">Air-bus Image Detection</a>
+                <a class="dropdown-item" href="https://github.com/buffbob/ships_from_space">Ships from Satellite
+                    Imagery</a>
+            </div>
+            <div class="my_description pt-2">Kaggle examples
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-light" style="font-size:22px;">
             <div>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type='button' id="dropDownMenuButton"
@@ -50,13 +49,27 @@
                         Some places to visit
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+                        <a class="dropdown-item" href="{{ url_for('static', filename='resume1.pdf') }}">My extremely boring resume</a>
                         <a class="dropdown-item" href="https://hub.docker.com/u/paddypup">My DockerHub</a>
                         <a class="dropdown-item" href="https://github.com/buffbob">My Github</a>
+                        <a class="dropdown-item" href="https://github.com/buffbob">Java projects on my github</a>
                         <a class="dropdown-item" href="{{ url_for('users.maps')}}">Maps</a>
                         <a class="dropdown-item" href="{{ url_for('users.jsapps') }}">JS Play</a>
                     </div>
                 </div>
             </div>
+        </li>
+        <li class="list-group-item list-group-item-light" style="font-size:22px;">
+            <div>
+                <a href="{{ url_for('users.mlapps') }}">TensorflowJS</a>
+            </div>
+            <span class="my_description ">Machine Learning in the browser</span>
+        </li>
+        <li class="list-group-item list-group-item-light" style="font-size:22px;">
+            <div>
+                <a href="{{ url_for('static', filename='resume1.pdf') }}">My boring resume</a>
+            </div>
+
         </li>
     </ul>
     <!--

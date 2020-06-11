@@ -1,9 +1,11 @@
 body {
-  background-color:'red';
-  /*url(  background-image: url("/home/thistle/Desktop/FlaskApps/sites_in_production/MyWebsite/myweb/static/images/ship.jpg");*/
   color: #333333;
   margin-top: 5rem;
 }
+
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
@@ -138,4 +140,27 @@ h1 {
 
 #messageform {
 
+}
+/*
+//////////////////////////////////form for Iris classifier
+*/
+#irisform{
+
+}
+
+.irisformlabels {
+    width:105px;
+}
+
+#irisbtn{
+    padding-left: 90px; /* same size as the label elements */
+    background-color:red;
+}
+
+#iris_picture{
+    width:120px;
+}
+#iris2body{
+    height:400px;
+    background-image: url("/static/images/iris_one.jpeg");
 }
