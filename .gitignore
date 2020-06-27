@@ -1,5 +1,6 @@
 *.pyc
 venv/
+myweb/__pycache__
 venv/*
 keys.txt
 __pycache__
