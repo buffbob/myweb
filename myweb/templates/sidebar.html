@@ -49,21 +49,15 @@
                         Some places to visit
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
-                        <a class="dropdown-item" href="{{ url_for('static', filename='resume1.pdf') }}">My extremely boring resume</a>
                         <a class="dropdown-item" href="https://hub.docker.com/u/paddypup">My DockerHub</a>
                         <a class="dropdown-item" href="https://github.com/buffbob">My Github</a>
-                        <a class="dropdown-item" href="https://github.com/buffbob">Java projects on my github</a>
-                        <a class="dropdown-item" href="{{ url_for('users.maps')}}">Maps</a>
+                        <a class="dropdown-item" href="https://github.com/buffbob/JavaProjects">Java projects on my github</a>
                         <a class="dropdown-item" href="{{ url_for('users.jsapps') }}">JS Play</a>
+                        <a class="dropdown-item" href="{{ url_for('static', filename='resume2.pdf') }}">My boring resume</a>
+                        <a class="dropdown-item" href="{{ url_for('users.mlapps') }}">TensorflowJS</a>
                     </div>
                 </div>
             </div>
-        </li>
-        <li class="list-group-item list-group-item-light" style="font-size:22px;">
-            <div>
-                <a href="{{ url_for('users.mlapps') }}">TensorflowJS</a>
-            </div>
-            <span class="my_description ">Machine Learning in the browser</span>
         </li>
         <li class="list-group-item list-group-item-light" style="font-size:22px;">
             <div>
