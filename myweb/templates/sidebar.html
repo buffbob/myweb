@@ -53,7 +53,7 @@
                         <a class="dropdown-item" href="https://github.com/buffbob" target="_blank">My Github</a>
                         <a class="dropdown-item" href="https://github.com/buffbob/JavaProjects" target="_blank">Java projects on my github</a>
                         <a class="dropdown-item" href="{{ url_for('users.jsapps') }}" target="_blank">JS Play</a>
-                        <a class="dropdown-item" href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">My boring resume</a>
+                        <a class="dropdown-item" href="{{ url_for('static', filename='resume_10-10-21_generic.pdf') }}" target="_blank">My boring resume</a>
                         <a class="dropdown-item" href="{{ url_for('users.mlapps') }}" target="_blank">TensorflowJS</a>
                     </div>
                 </div>
@@ -61,7 +61,8 @@
         </li>
         <li class="list-group-item list-group-item-light" style="font-size:22px;">
             <div>
-                <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">My boring resume</a>
+                <a type="application/pdf" href="{{ url_for('static', filename='resume_10-10-21_generic.pdf') }}" target="_blank">My boring resume.pdf</a>
+
             </div>
 
         </li>
